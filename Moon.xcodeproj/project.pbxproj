@@ -7,20 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A40EE852CFFC836000FE80B /* ZodiacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40EE842CFFC836000FE80B /* ZodiacView.swift */; };
 		1AB411DF2CFBD11D00A3E456 /* MoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411DE2CFBD11D00A3E456 /* MoonApp.swift */; };
 		1AB411E12CFBD11D00A3E456 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411E02CFBD11D00A3E456 /* ContentView.swift */; };
 		1AB411E32CFBD11D00A3E456 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411E22CFBD11D00A3E456 /* Item.swift */; };
 		1AB411E52CFBD11F00A3E456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB411E42CFBD11F00A3E456 /* Assets.xcassets */; };
 		1AB411E82CFBD11F00A3E456 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB411E72CFBD11F00A3E456 /* Preview Assets.xcassets */; };
+		1AB411EF2CFBD1ED00A3E456 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411EE2CFBD1ED00A3E456 /* Keys.swift */; };
+		1AB411F12CFBD30E00A3E456 /* MoonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411F02CFBD30E00A3E456 /* MoonHelper.swift */; };
+		1AB411F32CFBDC6800A3E456 /* MoonPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411F22CFBDC6800A3E456 /* MoonPhase.swift */; };
+		1AB411F52CFBFC1D00A3E456 /* MoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411F42CFBFC1D00A3E456 /* MoonView.swift */; };
+		1AB411F72CFC283D00A3E456 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411F62CFC283D00A3E456 /* LocationManager.swift */; };
+		1AB411FA2CFC340900A3E456 /* SunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411F92CFC340900A3E456 /* SunView.swift */; };
+		1AB411FE2CFEC73D00A3E456 /* MoonWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB411FD2CFEC73D00A3E456 /* MoonWebViewController.swift */; };
+		1AB412022CFEDEA000A3E456 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB412012CFEDEA000A3E456 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A40EE842CFFC836000FE80B /* ZodiacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacView.swift; sourceTree = "<group>"; };
 		1AB411DB2CFBD11D00A3E456 /* Moon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB411DE2CFBD11D00A3E456 /* MoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonApp.swift; sourceTree = "<group>"; };
 		1AB411E02CFBD11D00A3E456 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1AB411E22CFBD11D00A3E456 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1AB411E42CFBD11F00A3E456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AB411E72CFBD11F00A3E456 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1AB411EE2CFBD1ED00A3E456 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		1AB411F02CFBD30E00A3E456 /* MoonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonHelper.swift; sourceTree = "<group>"; };
+		1AB411F22CFBDC6800A3E456 /* MoonPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhase.swift; sourceTree = "<group>"; };
+		1AB411F42CFBFC1D00A3E456 /* MoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonView.swift; sourceTree = "<group>"; };
+		1AB411F62CFC283D00A3E456 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1AB411F82CFC2FCB00A3E456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1AB411F92CFC340900A3E456 /* SunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunView.swift; sourceTree = "<group>"; };
+		1AB411FD2CFEC73D00A3E456 /* MoonWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonWebViewController.swift; sourceTree = "<group>"; };
+		1AB412012CFEDEA000A3E456 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +72,18 @@
 		1AB411DD2CFBD11D00A3E456 /* Moon */ = {
 			isa = PBXGroup;
 			children = (
+				1AB411F82CFC2FCB00A3E456 /* Info.plist */,
 				1AB411DE2CFBD11D00A3E456 /* MoonApp.swift */,
+				1AB411F62CFC283D00A3E456 /* LocationManager.swift */,
 				1AB411E02CFBD11D00A3E456 /* ContentView.swift */,
+				1AB411F42CFBFC1D00A3E456 /* MoonView.swift */,
+				1AB411F92CFC340900A3E456 /* SunView.swift */,
+				1AB411F02CFBD30E00A3E456 /* MoonHelper.swift */,
+				1A40EE842CFFC836000FE80B /* ZodiacView.swift */,
+				1AB411FD2CFEC73D00A3E456 /* MoonWebViewController.swift */,
+				1AB412012CFEDEA000A3E456 /* SettingsView.swift */,
+				1AB411F22CFBDC6800A3E456 /* MoonPhase.swift */,
+				1AB411EE2CFBD1ED00A3E456 /* Keys.swift */,
 				1AB411E22CFBD11D00A3E456 /* Item.swift */,
 				1AB411E42CFBD11F00A3E456 /* Assets.xcassets */,
 				1AB411E62CFBD11F00A3E456 /* Preview Content */,
@@ -140,8 +169,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB412022CFEDEA000A3E456 /* SettingsView.swift in Sources */,
 				1AB411E12CFBD11D00A3E456 /* ContentView.swift in Sources */,
+				1AB411F12CFBD30E00A3E456 /* MoonHelper.swift in Sources */,
+				1AB411EF2CFBD1ED00A3E456 /* Keys.swift in Sources */,
 				1AB411E32CFBD11D00A3E456 /* Item.swift in Sources */,
+				1AB411FA2CFC340900A3E456 /* SunView.swift in Sources */,
+				1AB411F72CFC283D00A3E456 /* LocationManager.swift in Sources */,
+				1AB411FE2CFEC73D00A3E456 /* MoonWebViewController.swift in Sources */,
+				1A40EE852CFFC836000FE80B /* ZodiacView.swift in Sources */,
+				1AB411F52CFBFC1D00A3E456 /* MoonView.swift in Sources */,
+				1AB411F32CFBDC6800A3E456 /* MoonPhase.swift in Sources */,
 				1AB411DF2CFBD11D00A3E456 /* MoonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +317,9 @@
 				DEVELOPMENT_TEAM = XRZW598H83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Moon/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show the moon phase.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show the moon phase.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +349,9 @@
 				DEVELOPMENT_TEAM = XRZW598H83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Moon/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show the moon phase.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show the moon phase.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

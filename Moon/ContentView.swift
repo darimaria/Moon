@@ -6,56 +6,44 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @StateObject private var locationManager = LocationManager()
+    @State private var selectedTab: String = "MoonView" // Default to MoonView tab
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        NavigationView {
+            if let lat = locationManager.userLatitude, let lon = locationManager.userLongitude {
+                TabView(selection: $selectedTab) {
+                    MoonView(latitude: lat, longitude: lon)
+                        .tabItem {
+                            Label("Moon View", systemImage: "moon.stars")
+                        }
+                        .tag("MoonView") // Tag for the MoonView tab
+                    MoonWebView()
+                        .tabItem {
+                            Label("Web View", systemImage: "sun.max")
+                        }
+                        .tag("SunView") // Tag for the SunView tab
+                }
+                .toolbar {
+                    if selectedTab == "MoonView" {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            NavigationLink(destination: SettingsView()) {
+                                Image(systemName: "gearshape")
+                                    .imageScale(.large)
+                            }
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+            } else {
+                Text("Fetching your location...")
             }
         }
     }
 }
 
+
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
